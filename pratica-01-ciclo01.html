@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Lucas Martins Caetano
+DATA: 14/05/2024 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <!-- Importando Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="max-w-2xl mx-auto p-6 bg-white shadow-md rounded mt-10">
+        <!-- Título do Formulário -->
+        <h2 class="text-2xl font-bold mb-6">Formulário de cadastro</h2>
+        <!-- Formulário começa aqui -->
+        <form>
+            <!-- Grupo de Formulário para Nome -->
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Nome</label>
+                <input type="text" id="name"
+                    class="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    placeholder="Digite seu nome">
+            </div>
+
+            <!-- Grupo de Formulário para Email -->
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Endereço de Email</label>
+                <input type="email" id="email"
+                    class="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    placeholder="Digite seu email">
+            </div>
+
+            <!-- Grupo de Formulário para Senha -->
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+                <input type="password" id="password"
+                    class="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="Senha">
+            </div>
+
+            <!-- Grupo de Formulário para Número de Telefone -->
+            <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium text-gray-700">Número de Telefone</label>
+                <input type="tel" id="phone"
+                    class="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    placeholder="Digite seu número de telefone">
+            </div>
+
+            <!-- Grupo de Formulário para Endereço -->
+            <div class="mb-4">
+                <label for="address" class="block text-sm font-medium text-gray-700">Endereço</label>
+                <input type="text" id="address"
+                    class="mt-1 p-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    placeholder="Digite seu endereço">
+            </div>
+
+            <!-- Grupo de Formulário para Gênero (Botões de Rádio) -->
+            <div class="mb-4">
+                <span class="block text-sm font-medium text-gray-700">Gênero</span>
+                <div class="mt-2 space-y-2">
+                    <div class="flex items-center">
+                        <input id="male" name="gender" type="radio" class="h-4 w-4 text-indigo-600 border-gray-300"
+                            value="male" checked>
+                        <label for="male" class="ml-3 block text-sm font-medium text-gray-700">Masculino</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="female" name="gender" type="radio" class="h-4 w-4 text-indigo-600 border-gray-300"
+                            value="female">
+                        <label for="female" class="ml-3 block text-sm font-medium text-gray-700">Feminino</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo de Formulário para Hobbies (Caixas de Seleção) -->
+            <div class="mb-4">
+                <span class="block text-sm font-medium text-gray-700">Hobbies</span>
+                <div class="mt-2 space-y-2">
+                    <div class="flex items-center">
+                        <input id="hobby1" name="hobbies" type="checkbox"
+                            class="h-4 w-4 text-indigo-600 border-gray-300" value="reading">
+                        <label for="hobby1" class="ml-3 block text-sm font-medium text-gray-700">Leitura</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="hobby2" name="hobbies" type="checkbox"
+                            class="h-4 w-4 text-indigo-600 border-gray-300" value="travelling">
+                        <label for="hobby2" class="ml-3 block text-sm font-medium text-gray-700">Viagem</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input id="hobby3" name="hobbies" type="checkbox"
+                            class="h-4 w-4 text-indigo-600 border-gray-300" value="gaming">
+                        <label for="hobby3" class="ml-3 block text-sm font-medium text-gray-700">Jogos</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grupo de Formulário para País (Select) -->
+            <div class="mb-4">
+                <label for="country" class="block text-sm font-medium text-gray-700">País</label>
+                <select id="country" class="mt-1 block w-full p-2 shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    <option>Brasil</option>
+                    <option>Canadá</option>
+                    <option>Reino Unido</option>
+                    <option>Austrália</option>
+                </select>
+            </div>
+
+            <!-- Botão de Envio -->
+            <button type="submit"
+                class="w-full bg-indigo-600 text-white p-2 rounded-md shadow-sm hover:bg-indigo-700">Enviar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
